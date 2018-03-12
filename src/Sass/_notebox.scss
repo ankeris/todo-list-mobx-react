@@ -1,0 +1,51 @@
+.note__list {
+    list-style: none;
+    padding: 0;
+
+    .note__list--item {
+        position: relative;
+        width: 100%;
+        margin: 10px 0;
+        padding: 5px 0;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+
+        .item--box {
+            width: 100%;
+
+            input {
+                display: none;
+            }
+
+            .item--content, .item--number {
+                margin: 5px;
+            }
+        }
+        button {
+            display: none;
+        }
+    }
+
+        .editing {
+            .item--box {
+                .item--content {
+                    display: none;
+                }
+                .item--input {
+                    display: inherit;
+                }
+            }
+            button {
+                display: inherit;
+            }
+        }
+    }
+
+.add-note {
+    width: 100%;
+    font-size: 1em;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 18px 35px;
+}
